@@ -1,0 +1,6 @@
+@AniLove_HostAddress = http://localhost:5128
+
+GET {{AniLove_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
