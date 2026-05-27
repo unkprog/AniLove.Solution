@@ -15,7 +15,7 @@ function renderGallery(animals) {
         const location = obj ? `📍 ${obj.name}` : '📍 Не размещена';
         return `
             <div class="animal-card" onclick="showAnimalCard('${animal.id}')">
-                <img src="${animal.photoUrl}" alt="${animal.name}">
+                <img src="${(animal?.photoUrl ? animal?.photoUrl : '/img/placeholder.png')}" alt="${animal.name}">
                 <div class="animal-card-content">
                     <h3>${animal.name}</h3>
                     <div class="breed">${animal.breed || 'Неизвестная порода'}</div>
