@@ -1,7 +1,6 @@
-﻿/* Import Inter font */
+﻿/* Импорт шрифта Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100;14..32,200;14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
 
-/* Material Design 3 Color System */
 :root {
     --md-sys-color-primary: #6750A4;
     --md-sys-color-primary-light: #9A82DB;
@@ -37,7 +36,6 @@
     --md-sys-color-on-error-container: #410002;
     --md-sys-color-outline: #79747E;
     --md-sys-color-outline-variant: #CAC4D0;
-    /* Elevation */
     --md-sys-elevation-0: none;
     --md-sys-elevation-1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
     --md-sys-elevation-2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
@@ -59,9 +57,8 @@ body {
     line-height: 1.5;
 }
 
-/* Typography */
+/* Типография */
 h1, .h1 {
-    font-family: 'Inter', sans-serif;
     font-size: 57px;
     font-weight: 400;
     line-height: 64px;
@@ -69,42 +66,36 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-family: 'Inter', sans-serif;
     font-size: 45px;
     font-weight: 400;
     line-height: 52px;
 }
 
 h3, .h3 {
-    font-family: 'Inter', sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 44px;
 }
 
 h4, .h4 {
-    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 40px;
 }
 
 h5, .h5 {
-    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 36px;
 }
 
 h6, .h6 {
-    font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
 }
 
 .subtitle1 {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -112,7 +103,6 @@ h6, .h6 {
 }
 
 .subtitle2 {
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -120,7 +110,6 @@ h6, .h6 {
 }
 
 .body1 {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -128,7 +117,6 @@ h6, .h6 {
 }
 
 .body2 {
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -136,7 +124,6 @@ h6, .h6 {
 }
 
 .caption {
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -144,7 +131,6 @@ h6, .h6 {
 }
 
 .overline {
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -153,7 +139,6 @@ h6, .h6 {
 }
 
 .button-text {
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -195,7 +180,6 @@ h6, .h6 {
         font-size: 32px;
     }
 
-/* Navigation Tabs */
 .nav-tabs {
     display: flex;
     gap: 4px;
@@ -217,6 +201,7 @@ h6, .h6 {
     cursor: pointer;
     transition: all 0.2s;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
     .nav-tab:hover {
@@ -228,7 +213,15 @@ h6, .h6 {
         color: var(--md-sys-color-on-primary-container);
     }
 
-/* Hero Section */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* Hero */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -271,7 +264,6 @@ h6, .h6 {
     flex-wrap: wrap;
 }
 
-/* Stats Cards */
 .hero-stats {
     display: flex;
     gap: 24px;
@@ -325,6 +317,7 @@ h6, .h6 {
     align-items: center;
     gap: 8px;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
     .btn-primary:hover {
@@ -346,6 +339,7 @@ h6, .h6 {
     align-items: center;
     gap: 8px;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 .btn-outline {
@@ -366,7 +360,36 @@ h6, .h6 {
         border-color: transparent;
     }
 
-/* Sections */
+.btn-text {
+    background: none;
+    border: none;
+    color: var(--md-sys-color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--md-sys-color-surface-container-highest);
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s;
+}
+
+    .chip:hover {
+        background: var(--md-sys-color-surface-container-high);
+    }
+
+/* Section */
 .section {
     padding: 64px 24px;
     max-width: 1400px;
@@ -391,7 +414,7 @@ h6, .h6 {
     color: var(--md-sys-color-on-surface-variant);
 }
 
-/* Scheme Container */
+/* Scheme */
 .scheme-container {
     position: relative;
     border-radius: 28px;
@@ -400,27 +423,18 @@ h6, .h6 {
     box-shadow: var(--md-sys-elevation-2);
     min-height: 500px;
     height: 60vh;
-    cursor: default;
+    cursor: grab;
 }
 
-    .scheme-container.pan-active {
-        cursor: grab;
+    .scheme-container:active {
+        cursor: grabbing;
     }
-
-        .scheme-container.pan-active:active {
-            cursor: grabbing;
-        }
 
 #shelterScheme {
     display: block;
     width: 100%;
     height: 100%;
     background: #e8e0d5;
-    cursor: inherit;
-}
-
-/* Grid pattern for better visibility */
-#shelterScheme {
     background-image: linear-gradient(#d4cbbc 1px, transparent 1px), linear-gradient(90deg, #d4cbbc 1px, transparent 1px);
     background-size: 50px 50px;
 }
@@ -453,6 +467,11 @@ h6, .h6 {
             background: var(--md-sys-color-primary-container);
         }
 
+        .scheme-controls button.active {
+            background: var(--md-sys-color-primary);
+            color: white;
+        }
+
 .zoom-level {
     background: var(--md-sys-color-surface);
     padding: 8px 12px;
@@ -464,35 +483,28 @@ h6, .h6 {
     align-items: center;
 }
 
-#shelterScheme {
-    display: block;
-    width: 100%;
-    height: auto;
-    min-height: 500px;
-    background: #e8e0d5;
+.admin-panel {
+    background: var(--md-sys-color-surface-container);
+    border-radius: 28px;
+    padding: 24px;
+    margin-top: 24px;
 }
 
-/* Gallery Grid */
+.admin-info {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--md-sys-color-outline-variant);
+    font-size: 12px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Gallery */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
 }
 
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Animal Card */
 .animal-card {
     background: var(--md-sys-color-surface);
     border-radius: 28px;
@@ -541,7 +553,6 @@ h6, .h6 {
     margin-top: 5px;
 }
 
-/* Filter Chips */
 .gallery-filters {
     display: flex;
     gap: 8px;
@@ -560,67 +571,14 @@ h6, .h6 {
     color: var(--md-sys-color-on-surface);
     cursor: pointer;
     transition: all 0.2s;
-    font-family: 'Inter', sans-serif;
 }
-
-    .filter-chip:hover {
-        background: var(--md-sys-color-surface-container-high);
-    }
 
     .filter-chip.active {
         background: var(--md-sys-color-primary-container);
         color: var(--md-sys-color-on-primary-container);
     }
 
-/* Admin Panel */
-.admin-panel {
-    background: var(--md-sys-color-surface-container);
-    border-radius: 28px;
-    padding: 24px;
-    margin-top: 24px;
-    box-shadow: var(--md-sys-elevation-1);
-}
-
-    .admin-panel h3 {
-        font-size: 22px;
-        font-weight: 500;
-        margin-bottom: 16px;
-    }
-
-.admin-controls {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: var(--md-sys-color-surface-container-highest);
-    border: none;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    transition: all 0.2s;
-}
-
-    .chip:hover {
-        background: var(--md-sys-color-surface-container-high);
-    }
-
-.admin-info {
-    margin-top: 16px;
-    padding-top: 16px;
-    border-top: 1px solid var(--md-sys-color-outline-variant);
-    font-size: 12px;
-    color: var(--md-sys-color-on-surface-variant);
-}
-
-/* Contacts Grid */
+/* Contacts */
 .contacts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -654,22 +612,6 @@ h6, .h6 {
         margin-bottom: 8px;
     }
 
-    .contact-card p {
-        font-size: 14px;
-        color: var(--md-sys-color-on-surface-variant);
-        margin-bottom: 16px;
-    }
-
-.btn-text {
-    background: none;
-    border: none;
-    color: var(--md-sys-color-primary);
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-}
-
 .info-block {
     background: var(--md-sys-color-surface-container);
     padding: 24px;
@@ -683,44 +625,34 @@ h6, .h6 {
         margin-bottom: 16px;
     }
 
-    .info-block p {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-/* FAB */
-.fab {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
-    background: var(--md-sys-color-primary-container);
-    color: var(--md-sys-color-on-primary-container);
-    border: none;
-    cursor: pointer;
-    box-shadow: var(--md-sys-elevation-3);
-    transition: all 0.2s;
+/* Admin lists */
+.admin-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 900;
-    opacity: 0;
-    visibility: hidden;
+    flex-direction: column;
+    gap: 12px;
 }
 
-    .fab.visible {
-        opacity: 1;
-        visibility: visible;
-    }
+.admin-list-item {
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
 
-    .fab:hover {
-        box-shadow: var(--md-sys-elevation-4);
-        transform: scale(1.02);
-    }
+.admin-list-item-info {
+    flex: 1;
+}
 
-/* Modal */
+.admin-list-item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Modals */
 .modal {
     display: none;
     position: fixed;
@@ -728,7 +660,7 @@ h6, .h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.5);
     z-index: 2000;
     justify-content: center;
     align-items: center;
@@ -744,6 +676,7 @@ h6, .h6 {
     padding: 24px;
     position: relative;
     box-shadow: var(--md-sys-elevation-5);
+    animation: modalSlideIn 0.3s cubic-bezier(0.2,0,0,1);
 }
 
 .modal-close {
@@ -763,6 +696,18 @@ h6, .h6 {
     .modal-close:hover {
         background: var(--md-sys-color-surface-container-highest);
     }
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 /* Timeline */
 .timeline {
@@ -804,7 +749,7 @@ h6, .h6 {
     color: #555;
 }
 
-/* Status Badge */
+/* Status badge */
 .status-badge {
     display: inline-block;
     padding: 4px 12px;
@@ -823,19 +768,7 @@ h6, .h6 {
     color: white;
 }
 
-/* Tooltip */
-.object-tooltip {
-    position: fixed;
-    background: var(--md-sys-color-surface-container-high);
-    border-radius: 28px;
-    padding: 16px;
-    z-index: 2000;
-    pointer-events: auto;
-    box-shadow: var(--md-sys-elevation-3);
-    max-width: 280px;
-}
-
-/* Form Elements */
+/* Form */
 .form-group {
     margin-bottom: 20px;
 }
@@ -848,9 +781,7 @@ h6, .h6 {
         color: var(--md-sys-color-on-surface-variant);
     }
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-group input, .form-group select, .form-group textarea {
         width: 100%;
         padding: 12px 16px;
         border: 1px solid var(--md-sys-color-outline);
@@ -860,27 +791,68 @@ h6, .h6 {
         background: var(--md-sys-color-surface);
     }
 
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--md-sys-color-primary);
-        }
-
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-/* Mobile Menu */
-.mobile-menu-btn {
-    display: none;
-    background: none;
+/* Tooltip */
+.object-tooltip {
+    position: fixed;
+    background: var(--md-sys-color-surface-container-high);
+    border-radius: 28px;
+    padding: 16px;
+    z-index: 2000;
+    pointer-events: auto;
+    box-shadow: var(--md-sys-elevation-3);
+    max-width: 280px;
+    animation: tooltipFadeIn 0.2s;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FAB */
+.fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
     border: none;
     cursor: pointer;
-    padding: 8px;
+    box-shadow: var(--md-sys-elevation-3);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
 }
+
+    .fab.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .fab:hover {
+        box-shadow: var(--md-sys-elevation-4);
+        transform: scale(1.02);
+    }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -890,19 +862,19 @@ h6, .h6 {
 
     .nav-tabs {
         display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--md-sys-color-surface);
+        padding: 16px;
+        border-radius: 0;
+        gap: 8px;
     }
 
         .nav-tabs.active {
             display: flex;
-            position: absolute;
-            top: 64px;
-            left: 0;
-            right: 0;
-            flex-direction: column;
-            background: var(--md-sys-color-surface);
-            padding: 16px;
-            border-radius: 0;
-            gap: 8px;
         }
 
     .mobile-menu-btn {
@@ -932,10 +904,6 @@ h6, .h6 {
         line-height: 40px;
     }
 
-    .stat-label {
-        font-size: 12px;
-    }
-
     .section-header h2 {
         font-size: 32px;
         line-height: 40px;
@@ -943,6 +911,11 @@ h6, .h6 {
 
     .section {
         padding: 40px 16px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 16px;
     }
 
     .fab {
@@ -953,40 +926,12 @@ h6, .h6 {
     }
 }
 
-/* Animations */
-@keyframes modalSlideIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-.modal-content {
-    animation: modalSlideIn 0.3s cubic-bezier(0.2, 0, 0, 1);
-}
-
-@keyframes tooltipFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(4px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.object-tooltip {
-    animation: tooltipFadeIn 0.2s;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -1005,71 +950,402 @@ h6, .h6 {
     ::-webkit-scrollbar-thumb:hover {
         background: var(--md-sys-color-primary);
     }
-
-/* Pan mode cursor */
-.scheme-container.pan-mode {
-    cursor: grab;
-}
-
-    .scheme-container.pan-mode:active {
-        cursor: grabbing;
-    }
-
-.scheme-container {
-    position: relative;
-    border-radius: 28px;
-    overflow: hidden;
-    background: var(--md-sys-color-surface-container-low);
-    box-shadow: var(--md-sys-elevation-2);
-    min-height: 500px;
-    cursor: grab;
-}
-
-    .scheme-container:active {
-        cursor: grabbing;
-    }
-
-/* Pan control button */
-.scheme-controls {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+/* Стили для списка собак в админке (как на картинке) */
+.animals-cards-list {
     display: flex;
-    gap: 8px;
-    z-index: 10;
+    flex-direction: column;
+    gap: 16px;
 }
 
-    .scheme-controls button {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        background: var(--md-sys-color-surface);
-        border: none;
-        cursor: pointer;
-        box-shadow: var(--md-sys-elevation-1);
-        transition: all 0.2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.animal-admin-card {
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 20px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: var(--md-sys-elevation-1);
+    transition: all 0.2s;
+}
+
+    .animal-admin-card:hover {
+        box-shadow: var(--md-sys-elevation-2);
     }
 
-        .scheme-controls button:hover {
-            box-shadow: var(--md-sys-elevation-2);
-            background: var(--md-sys-color-primary-container);
-        }
-
-        .scheme-controls button.active {
-            background: var(--md-sys-color-primary);
-            color: white;
-        }
-
-.zoom-level {
-    background: var(--md-sys-color-surface);
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    box-shadow: var(--md-sys-elevation-1);
-    display: inline-flex;
+.animal-card-left {
+    display: flex;
     align-items: center;
+    gap: 20px;
+    flex: 2;
+    min-width: 200px;
+}
+
+.animal-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+    background: var(--md-sys-color-surface-container-highest);
+}
+
+.animal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.animal-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--md-sys-color-on-surface);
+}
+
+.animal-details {
+    font-size: 14px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.animal-card-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .animal-admin-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .animal-card-left {
+        justify-content: flex-start;
+    }
+
+    .animal-card-actions {
+        justify-content: flex-start;
+    }
+}
+
+/* ===== Админка: карточки собак ===== */
+.animals-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.animal-admin-card {
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 28px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: var(--md-sys-elevation-1);
+    transition: all 0.2s;
+}
+
+    .animal-admin-card:hover {
+        box-shadow: var(--md-sys-elevation-2);
+        background: var(--md-sys-color-surface-container);
+    }
+
+.animal-card-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 2;
+    min-width: 220px;
+}
+
+.animal-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    object-fit: cover;
+    background: var(--md-sys-color-surface-container-highest);
+    border: 2px solid var(--md-sys-color-outline-variant);
+}
+
+.animal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.animal-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--md-sys-color-on-surface);
+}
+
+.animal-details {
+    font-size: 14px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.animal-card-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Для списка объектов (если нужно) */
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-list-item {
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 20px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--md-sys-color-on-surface-variant);
+    background: var(--md-sys-color-surface-container-low);
+    border-radius: 28px;
+}
+
+@media (max-width: 700px) {
+    .animal-admin-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .animal-card-left {
+        justify-content: flex-start;
+    }
+
+    .animal-card-actions {
+        justify-content: flex-start;
+    }
+}
+
+/* ========== МОБИЛЬНАЯ АДАПТАЦИЯ (до 768px) ========== */
+@media (max-width: 768px) {
+    /* ----- Общие элементы ----- */
+    .section {
+        padding: 32px 16px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 12px 16px;
+        min-width: 100px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* ----- Админка: карточки собак ----- */
+    .animals-cards-list {
+        gap: 12px;
+    }
+
+    .animal-admin-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .animal-card-left {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .animal-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    .animal-info {
+        align-items: center;
+    }
+
+    .animal-name {
+        font-size: 18px;
+    }
+
+    .animal-details {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .animal-card-actions {
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+        .animal-card-actions .chip {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+    /* ----- Админка: список объектов ----- */
+    .admin-list-item {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .admin-list-item-actions {
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    /* ----- Галерея: фильтры (горизонтальная прокрутка) ----- */
+    .gallery-filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 8px;
+        gap: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-chip {
+        flex-shrink: 0;
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    /* ----- Галерея: карточки собак ----- */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .animal-card img {
+        height: 200px;
+    }
+
+    .animal-card h3 {
+        font-size: 18px;
+    }
+
+    /* ----- Схема: кнопки управления ----- */
+    .scheme-controls {
+        gap: 6px;
+        top: 8px;
+        right: 8px;
+    }
+
+        .scheme-controls button {
+            width: 36px;
+            height: 36px;
+        }
+
+    .zoom-level {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .scheme-container {
+        min-height: 400px;
+        height: 50vh;
+    }
+
+    /* ----- Модальные окна ----- */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+        .modal-content h3 {
+            font-size: 20px;
+        }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* ----- FAB кнопка ----- */
+    .fab {
+        width: 48px;
+        height: 48px;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) — дополнительная оптимизация */
+@media (max-width: 480px) {
+    .animal-card-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .animal-card-actions .chip {
+            width: 100%;
+            justify-content: center;
+        }
+
+    .btn-primary, .btn-secondary, .btn-outline {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .hero-buttons .btn-primary,
+        .hero-buttons .btn-secondary {
+            justify-content: center;
+        }
+
+    .info-block p {
+        font-size: 13px;
+    }
+
+    .animal-card-actions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+        .animal-card-actions .chip {
+            width: 100%;
+            text-align: center;
+        }
 }

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniLove - Схема приюта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,1" />
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header class="app-bar">
+        <div class="app-bar-content">
+            <div class="app-bar-logo">
+                <span class="material-symbols-outlined">pets</span>
+                <span>AniLove</span>
+            </div>
+            <div class="nav-tabs">
+                <a href="/index.html" class="nav-tab">Главная</a>
+                <a href="/scheme.html" class="nav-tab active">Схема</a>
+                <a href="/gallery.html" class="nav-tab">Галерея</a>
+                <a href="/admin.html" class="nav-tab">Админка</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-header">
+                <h2>Схема приюта</h2>
+                <p class="section-subtitle">Наведите на объект — увидите фото собаки</p>
+            </div>
+            <div class="scheme-container" id="schemeContainer">
+                <div class="scheme-controls">
+                    <button id="panBtn" title="Режим перемещения (зажмите и тяните)">
+                        <span class="material-symbols-outlined">pan_tool</span>
+                    </button>
+                    <button id="zoomInBtn" title="Приблизить"><span class="material-symbols-outlined">zoom_in</span></button>
+                    <button id="zoomOutBtn" title="Отдалить"><span class="material-symbols-outlined">zoom_out</span></button>
+                    <button id="zoomFitBtn" title="Показать всё"><span class="material-symbols-outlined">fit_screen</span></button>
+                    <span id="zoomLevel" class="zoom-level">100%</span>
+                </div>
+                <svg id="shelterScheme" viewBox="0 0 2000 1500"></svg>
+            </div>
+        </section>
+    </main>
+
+    <div id="objectTooltip" class="object-tooltip" style="display: none;"></div>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/scheme.js"></script>
+    <script>
+        // Мобильное меню
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navTabs = document.querySelector('.nav-tabs');
+        mobileBtn.addEventListener('click', () => navTabs.classList.toggle('active'));
+    </script>
+</body>
+</html>
