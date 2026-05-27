@@ -1,6 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
-:root {
+/* Изначальный вариант */
+/*:root {
     --md-sys-color-primary: #6750A4;
     --md-sys-color-primary-container: #EADDFF;
     --md-sys-color-on-primary-container: #21005D;
@@ -19,6 +20,139 @@
     --md-sys-elevation-1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
     --md-sys-elevation-2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
     --md-sys-elevation-3: 0px 1px 3px 0px rgba(0,0,0,0.30), 0px 4px 8px 3px rgba(0,0,0,0.15);
+}*/
+
+/* Вариант 1 – Тёплый/приютский (оранжево-зелёный) – уют, забота, надежда */
+/*:root {
+    --md-sys-color-primary: #E88136;
+    --md-sys-color-primary-light: #FFB347;
+    --md-sys-color-primary-dark: #C45D1F;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #FFE0B5;
+    --md-sys-color-on-primary-container: #4A2A0A;
+    --md-sys-color-secondary: #5D9C5C;
+    --md-sys-color-secondary-light: #8BCA7A;
+    --md-sys-color-secondary-dark: #3B6E3A;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #DAF0D2;
+    --md-sys-color-on-secondary-container: #1A3A19;
+    --md-sys-color-tertiary: #7B6E4B;
+    --md-sys-color-tertiary-light: #A69B70;
+    --md-sys-color-tertiary-dark: #5D4F2E;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #F2ECD9;
+    --md-sys-color-on-tertiary-container: #2E2614;
+    --md-sys-color-surface: #FCF8F0;
+    --md-sys-color-surface-dim: #E8E0D5;
+    --md-sys-color-surface-bright: #FFFDF8;
+    --md-sys-color-surface-container-lowest: #FFFFFF;
+    --md-sys-color-surface-container-low: #FAF5EB;
+    --md-sys-color-surface-container: #F5EFE3;
+    --md-sys-color-surface-container-high: #F0E8D9;
+    --md-sys-color-surface-container-highest: #EBE1CF;
+    --md-sys-color-on-surface: #2E2A24;
+    --md-sys-color-on-surface-variant: #5E5545;
+    --md-sys-color-error: #BA1A1A;
+    --md-sys-color-error-container: #FFDAD6;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-outline: #8E8573;
+    --md-sys-color-outline-variant: #D1C7B9;
+    --md-sys-elevation-0: none;
+    --md-sys-elevation-1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
+    --md-sys-elevation-2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
+    --md-sys-elevation-3: 0px 1px 3px 0px rgba(0,0,0,0.30), 0px 4px 8px 3px rgba(0,0,0,0.15);
+    --md-sys-elevation-4: 0px 2px 3px 0px rgba(0,0,0,0.30), 0px 6px 10px 4px rgba(0,0,0,0.15);
+    --md-sys-elevation-5: 0px 4px 4px 0px rgba(0,0,0,0.30), 0px 8px 12px 6px rgba(0,0,0,0.15);
+}*/
+
+/* Вариант 2 – Доверие/спокойствие (синий + акцентный оранжевый) */
+/*:root {
+    --md-sys-color-primary: #4A90E2;
+    --md-sys-color-primary-light: #7FB8F0;
+    --md-sys-color-primary-dark: #2C5F8A;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #D2E4FC;
+    --md-sys-color-on-primary-container: #103456;
+    --md-sys-color-secondary: #F5A623;
+    --md-sys-color-secondary-light: #FFC76E;
+    --md-sys-color-secondary-dark: #C47D0C;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-secondary-container: #FFEFD0;
+    --md-sys-color-on-secondary-container: #4D3200;
+    --md-sys-color-tertiary: #62B5A8;
+    --md-sys-color-tertiary-light: #93D4C8;
+    --md-sys-color-tertiary-dark: #3D7E72;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #D6F2ED;
+    --md-sys-color-on-tertiary-container: #1D4A41;
+    --md-sys-color-surface: #F8FBFE;
+    --md-sys-color-surface-dim: #E3EAF2;
+    --md-sys-color-surface-bright: #FFFFFF;
+    --md-sys-color-surface-container-lowest: #FFFFFF;
+    --md-sys-color-surface-container-low: #F2F6FA;
+    --md-sys-color-surface-container: #ECF1F7;
+    --md-sys-color-surface-container-high: #E5EBF2;
+    --md-sys-color-surface-container-highest: #DEE5ED;
+    --md-sys-color-on-surface: #1C2A3A;
+    --md-sys-color-on-surface-variant: #4E5D6E;
+    --md-sys-color-error: #BA1A1A;
+    --md-sys-color-error-container: #FFDAD6;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-outline: #7C8A9B;
+    --md-sys-color-outline-variant: #C5D0DB;
+    --md-sys-elevation-0: none;
+    --md-sys-elevation-1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
+    --md-sys-elevation-2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
+    --md-sys-elevation-3: 0px 1px 3px 0px rgba(0,0,0,0.30), 0px 4px 8px 3px rgba(0,0,0,0.15);
+    --md-sys-elevation-4: 0px 2px 3px 0px rgba(0,0,0,0.30), 0px 6px 10px 4px rgba(0,0,0,0.15);
+    --md-sys-elevation-5: 0px 4px 4px 0px rgba(0,0,0,0.30), 0px 8px 12px 6px rgba(0,0,0,0.15);
+}*/
+
+/* Вариант 3 – Нежная зелёная (натуральные оттенки, экологичность) */
+
+:root {
+    --md-sys-color-primary: #66B77D;
+    --md-sys-color-primary-light: #9AD4A8;
+    --md-sys-color-primary-dark: #3E8A54;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #DCF2E2;
+    --md-sys-color-on-primary-container: #1E4A2B;
+    --md-sys-color-secondary: #FFD166;
+    --md-sys-color-secondary-light: #FFE699;
+    --md-sys-color-secondary-dark: #CCA83B;
+    --md-sys-color-on-secondary: #3A2E0A;
+    --md-sys-color-secondary-container: #FFF2CF;
+    --md-sys-color-on-secondary-container: #4D3B00;
+    --md-sys-color-tertiary: #E8A87C;
+    --md-sys-color-tertiary-light: #F5C6A6;
+    --md-sys-color-tertiary-dark: #C17A4A;
+    --md-sys-color-on-tertiary: #FFFFFF;
+    --md-sys-color-tertiary-container: #FDECDF;
+    --md-sys-color-on-tertiary-container: #4E2B12;
+    --md-sys-color-surface: #FDFBF7;
+    --md-sys-color-surface-dim: #E8E2D8;
+    --md-sys-color-surface-bright: #FFFFFF;
+    --md-sys-color-surface-container-lowest: #FFFFFF;
+    --md-sys-color-surface-container-low: #F9F6EF;
+    --md-sys-color-surface-container: #F3EFE7;
+    --md-sys-color-surface-container-high: #EDE8DE;
+    --md-sys-color-surface-container-highest: #E7E1D5;
+    --md-sys-color-on-surface: #2B2B22;
+    --md-sys-color-on-surface-variant: #5A5344;
+    --md-sys-color-error: #BA1A1A;
+    --md-sys-color-error-container: #FFDAD6;
+    --md-sys-color-on-error: #FFFFFF;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-outline: #877E6C;
+    --md-sys-color-outline-variant: #D0C6B6;
+    --md-sys-elevation-0: none;
+    --md-sys-elevation-1: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 1px 3px 1px rgba(0,0,0,0.15);
+    --md-sys-elevation-2: 0px 1px 2px 0px rgba(0,0,0,0.30), 0px 2px 6px 2px rgba(0,0,0,0.15);
+    --md-sys-elevation-3: 0px 1px 3px 0px rgba(0,0,0,0.30), 0px 4px 8px 3px rgba(0,0,0,0.15);
+    --md-sys-elevation-4: 0px 2px 3px 0px rgba(0,0,0,0.30), 0px 6px 10px 4px rgba(0,0,0,0.15);
+    --md-sys-elevation-5: 0px 4px 4px 0px rgba(0,0,0,0.30), 0px 8px 12px 6px rgba(0,0,0,0.15);
 }
 
 * {
